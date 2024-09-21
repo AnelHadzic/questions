@@ -10,12 +10,18 @@ import {
 import React, { useState } from "react";
 import { questions } from "../list/dentistry";
 
+interface Question {
+  question: string;
+  options: { [key: string]: string };
+  correct_answer: string;
+}
+
 export default function Page() {
-  const [answers, setAnswers] = useState({});
+  const [answers, setAnswers] = useState<Record<number, string>>({});
   const [checked, setChecked] = useState(false);
 
   // Handle answer selection
-  const handleAnswerChange = (questionIndex, value) => {
+  const handleAnswerChange = (questionIndex: number, value: string) => {
     setAnswers((prevAnswers) => ({
       ...prevAnswers,
       [questionIndex]: value,
@@ -33,7 +39,7 @@ export default function Page() {
           DENTISTRY
         </Typography>
 
-        {questions.map((questionItem, index) => (
+        {questions.map((questionItem: Question, index: number) => (
           <FormControl
             component="fieldset"
             key={index}
@@ -55,8 +61,8 @@ export default function Page() {
                   label={questionItem.options[optionKey]}
                   style={{
                     color:
-                      checked && optionKey !== questionItem.correct_answer
-                        ? "red"
+                      checked && optionKey === questionItem.correct_answer
+                        ? "green"
                         : "inherit",
                   }}
                 />

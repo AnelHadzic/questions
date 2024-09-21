@@ -39,6 +39,8 @@ export const questions = [
     question: "Temporary (deciduous) dentition consists of:",
     options: {
       a: "2 incisors + 1 canine + 2 molars",
+      b: "2 incisors + 1canine + 1 premolar + 1 molar",
+      c: "2 incisor + 1 canine + 2 premolars + 3 molar",
     },
     correct_answer: "a",
   },
@@ -65,6 +67,7 @@ export const questions = [
     options: {
       a: "Squamous cell cancer",
       b: "Osteosarcoma",
+      c: "Pleomorphic adenoma",
     },
     correct_answer: "a",
   },
@@ -139,7 +142,7 @@ export const questions = [
       b: "Restore only the aesthetic function",
       c: "Restore the aesthetic and functional role of the tooth",
     },
-    correct_answer: "c",
+    correct_answer: "a",
   },
   {
     question: "Dental enamel:",
@@ -173,6 +176,7 @@ export const questions = [
     options: {
       a: "Mucositis, erosions, ulceration, xerostomia",
       b: "Bisphosphonates osteonecrosis",
+      c: "Neuralgia",
     },
     correct_answer: "a",
   },
