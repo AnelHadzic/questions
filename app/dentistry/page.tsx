@@ -20,7 +20,6 @@ export default function Page() {
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [checked, setChecked] = useState(false);
 
-  // Handle answer selection
   const handleAnswerChange = (questionIndex: number, value: string) => {
     setAnswers((prevAnswers) => ({
       ...prevAnswers,

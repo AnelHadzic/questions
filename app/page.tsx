@@ -7,7 +7,7 @@ export default function Home() {
         <Typography variant="h3" gutterBottom>
           Choose a quiz
         </Typography>
-        <Button href="/dentistry">Dentistry</Button>{" "}
+        <Button href="/dentistry">Dentistry</Button>
       </main>
     </div>
   );
