@@ -1,4 +1,4 @@
-export const questions = [
+export const dentistry1 = [
   {
     question: "The role of orthodontics is:",
     options: {

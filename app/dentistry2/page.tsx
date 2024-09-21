@@ -8,7 +8,7 @@ import {
   Button,
 } from "@mui/material";
 import React, { useState } from "react";
-import { questions } from "../list/dentistry";
+import { dentistry2 } from "../list/dentistry2";
 
 interface Question {
   question: string;
@@ -37,8 +37,8 @@ export default function Page() {
         <Typography variant="h2" gutterBottom>
           DENTISTRY
         </Typography>
-        <Typography variant="h6">11.12.23</Typography>
-        {questions.map((questionItem: Question, index: number) => (
+        <Typography variant="h6">13.12.21</Typography>
+        {dentistry2.map((questionItem: Question, index: number) => (
           <FormControl
             component="fieldset"
             key={index}
