@@ -95,7 +95,11 @@ export default function Page() {
           </Card>
         ))}
 
-        <Button variant="contained" onClick={handleCheckAnswers}>
+        <Button
+          color="success"
+          variant="contained"
+          onClick={handleCheckAnswers}
+        >
           Finished
         </Button>
       </main>
