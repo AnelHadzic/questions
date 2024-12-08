@@ -51,7 +51,7 @@ export default function Page() {
               borderRadius: "10px",
             }}
           >
-            <CardHeader className="flex gap-3">
+            <CardHeader className="flex gap-3 pb-3">
               <Typography variant="h6">{`${index + 1}. ${
                 questionItem.question
               }`}</Typography>
