@@ -7,8 +7,12 @@ export default function Home() {
         <Typography variant="h3" gutterBottom>
           Choose a quiz
         </Typography>
-        <Button href="/dentistry1">Dentistry - 11.12.23 </Button>
-        <Button href="/dentistry2">Dentistry - 13.12.21 </Button>
+        <Button color="secondary" variant="contained" href="/dentistry1">
+          Dentistry - 11.12.23{" "}
+        </Button>
+        <Button color="secondary" variant="contained" href="/dentistry2">
+          Dentistry - 13.12.21{" "}
+        </Button>
       </main>
     </div>
   );

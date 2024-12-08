@@ -11,7 +11,10 @@ import React from "react";
 const Navbar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar
+        position="static"
+        sx={{ backgroundColor: "#141414", color: "white" }}
+      >
         <Toolbar>
           <IconButton
             size="large"
